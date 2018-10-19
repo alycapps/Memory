@@ -1,0 +1,72 @@
+[
+  {
+  "id": 1,
+  "image": "./images/1-WilliamHartnell.jpg",
+  "name": "William Hartnell"
+  },
+  {
+    "id": 2,
+    "image": "./images/2-PatrickTroughton.jpg",
+    "name":"Patrick Troughton"
+  },
+  {
+    "id": 3,
+    "image": "./images/3-JonPertwee.jpg",
+    "name": "Jon Pertwee"
+  },
+  {
+    "id": 4,
+    "image": "./images/4-TomBaker.jpg",
+    "name": "Tom Baker"
+  },
+  {
+    "id": 5,
+    "image": "./images/5-PeterDavison.jpg",
+    "name": "Peter Davison"
+  },
+  {
+    "id": 6,
+    "image": "./images/6-ColinBaker.jpg",
+    "name": "Colin Baker"
+  },
+  {
+    "id": 7,
+    "image": "./images/7-SylvesterMcCoy.jpg",
+    "name": "Sylvester McCoy"
+  },
+  {
+    "id": 8,
+    "image": "./images/8-PaulMcGann.jpg",
+    "name": "Paul McGann"
+  },
+  {
+    "id": 9,
+    "image": "./images/9-ChristopherEccelston.jpg",
+    "name": "Christopher Eccelston"
+  },
+  {
+    "id": 10,
+    "image": "./images/10-DavidTennant.jpg",
+    "name": "David Tennant"
+  },
+  {
+    "id": 11,
+    "image": "./images/11-MattSmith.jpg",
+    "name": "Matt Smith"
+  },
+  {
+    "id": 12,
+    "image": "./images/12-PeterCapaldi.jpg",
+    "name": "Peter Capaldi"
+  },
+  {
+    "id": 13,
+    "image": "./images/13-JodieWhittaker.jpg",
+    "name": "Jodie Whittaker"
+  },
+  {
+    "id": 14,
+    "image": "./images/9.1-JohnHurt.jpg",
+    "name": "John Hurt"
+  }
+]

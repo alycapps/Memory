@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import doctors from "../doctors.json"
 import Card from "./card"
+import Jumbotron from "./jumbotron"
 
 class DoctorList extends Component {
   state = {
@@ -15,19 +16,28 @@ class DoctorList extends Component {
       score: score + event.target.value
     })
     console.log("clicked pic")
+    console.log(score)
+    this.shuffle()
+  };
+  
+  shuffle = () => {
+
   };
 
   render() {
     return (
-      <div className="row">
-        {this.state.doctors.map( doctor => (
-          <Card 
-            image={doctor.image}
-            id={doctor.id}
-            name={doctor.name}
-            handleClick={this.handleAddPoint}
-          />
-        ))}
+      <div>
+        <Jumbotron state={this.state}/>
+        <div className="row">
+          {this.state.doctors.map( doctor => (
+            <Card 
+              image={doctor.image}
+              id={doctor.id}
+              name={doctor.name}
+              handleClick={this.handleAddPoint}
+            />
+          ))}
+        </div>
       </div>
     )
   }

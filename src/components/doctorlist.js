@@ -19,7 +19,7 @@ class DoctorList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
         {this.state.doctors.map( doctor => (
           <Card 
             image={doctor.image}
@@ -27,7 +27,6 @@ class DoctorList extends Component {
             name={doctor.name}
             handleClick={this.handleAddPoint}
           />
-        
         ))}
       </div>
     )

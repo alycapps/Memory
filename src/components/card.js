@@ -2,14 +2,13 @@ import React from "react";
 
 const styles = {
   card: {
-    width: "25%",
     margin: 0
   }
 }
 
 const Card = props => (
-  <div>
-      <div className="card col-sm-4" style={styles.card} >
+  <div className="col-sm-4">
+      <div className="card" style={styles.card} >
       <img value="1" className="card-body" src={props.image} alt={props.name} onClick={props.handleClick}/>
         {/* <div className="card-body"> */}
           {/* <p className="card-text">

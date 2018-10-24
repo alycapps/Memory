@@ -18,30 +18,23 @@ class DoctorList extends Component {
         this.setState({
           score: score + 1
         })
-        this.shuffle()
+        this.shuffle(doctors)
       }
       else {
         this.setState({
           score: score + 1,
           highScore: highScore + 1
         })
-        this.shuffle()
+        this.shuffle(doctors)
       }
-    console.log("clicked pic")
-    console.log(score)
   };
   
-  shuffle = () => {
-    const loc = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-    for (let i = 0; i < 14; i++) {
-        let x = Math.floor(Math.random() * 14) + 1;
-        let v = loc.indexOf(x);
-        while (v >= 0) {
-            x = Math.floor(Math.random() * 14) + 1;
-            v = loc.indexOf(x);
-        }
-        loc[i] = x;
+  shuffle = a => {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
     }
+    return a;
   };
 
   render() {

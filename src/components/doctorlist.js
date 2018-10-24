@@ -9,7 +9,9 @@ class DoctorList extends Component {
     score: 0,
     highScore: 0
   };
-
+  handleDoctorClick = event => {
+    
+  };
   handleAddPoint = event => {
     const { score, highScore } = this.state;
       if (score < highScore) {

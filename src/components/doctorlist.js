@@ -11,17 +11,35 @@ class DoctorList extends Component {
   };
 
   handleAddPoint = event => {
-    const { score } = this.state;
-    this.setState({
-      score: score + event.target.value
-    })
+    const { score, highScore } = this.state;
+      if (score < highScore) {
+        this.setState({
+          score: score + 1
+        })
+        this.shuffle()
+      }
+      else {
+        this.setState({
+          score: score + 1,
+          highScore: highScore + 1
+        })
+        this.shuffle()
+      }
     console.log("clicked pic")
     console.log(score)
-    this.shuffle()
   };
   
   shuffle = () => {
-
+    const loc = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    for (let i = 0; i < 14; i++) {
+        let x = Math.floor(Math.random() * 14) + 1;
+        let v = loc.indexOf(x);
+        while (v >= 0) {
+            x = Math.floor(Math.random() * 14) + 1;
+            v = loc.indexOf(x);
+        }
+        loc[i] = x;
+    }
   };
 
   render() {

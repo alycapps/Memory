@@ -9,7 +9,7 @@ const styles = {
 const Card = props => (
   <div className="col-sm-3">
       <div className="card" style={styles.card} >
-      <img value="1" className="card-body" src={props.image} alt={props.name} onClick={props.handleClick}/>
+      <img value="1" className="card-body" click="false" id={props.id} src={props.image} alt={props.name} onClick={props.handleClick}/>
       </div>
   </div>
 );

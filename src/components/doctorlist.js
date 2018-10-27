@@ -10,9 +10,11 @@ class DoctorList extends Component {
     highScore: 0,
   };
   // function for checking if doctor was already clicked
-  handleDoctorClick = event => {
+  handleDoctorClick = (event) => {
+    console.log(doctors)
     console.log(event.target)
-    let click = event.target.click;
+    console.log("pic clicked")
+    var click = event.target.dataset.click;
     console.log(click)
     if (click === "true") {
       this.setState({
@@ -22,7 +24,7 @@ class DoctorList extends Component {
       this.shuffle(doctors);
     }
     else {
-      click=true;
+      event.target.dataset.click=true;
       console.log("click is false")
       this.handleAddPoint();
     }
